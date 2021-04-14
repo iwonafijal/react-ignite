@@ -9,6 +9,7 @@ import GameDetail from "../components/GameDetail";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import { fadeIn } from "../animations";
+import BeatLoader from "react-spinners/BeatLoader";
 
 const Home = () => {
   // get the current location
@@ -21,9 +22,11 @@ const Home = () => {
     dispatch(loadGames());
   }, [dispatch]);
   // Get that data back from the state
-  const { popular, newGames, upcoming, searched } = useSelector(
+  const { popular, newGames, upcoming, searched, isLoading } = useSelector(
     (state) => state.games
   );
+
+  console.log("isLoading", isLoading);
 
   return (
     <GameList variants={fadeIn} initial="hidden" animate="show">
@@ -31,6 +34,9 @@ const Home = () => {
       {searched.length ? (
         <div className="searched">
           <h2>Searched Games</h2>
+          <StyledSpinnerContainer>
+            <BeatLoader color={"#ff7676"} loading={isLoading} />
+          </StyledSpinnerContainer>
           <Games>
             {searched.map((game) => (
               <Game
@@ -47,6 +53,9 @@ const Home = () => {
         ""
       )}
       <h2>Upcoming Games</h2>
+      <StyledSpinnerContainer>
+        <BeatLoader color={"#ff7676"} loading={isLoading} />
+      </StyledSpinnerContainer>
       <Games>
         {upcoming.map((game) => (
           <Game
@@ -87,9 +96,9 @@ const Home = () => {
 };
 
 const GameList = styled.div`
-  padding: 0rem 5rem;
+  padding: 2rem 5rem;
   h2 {
-    padding: 5rem 0rem;
+    padding: 4rem 0rem;
   }
 `;
 
@@ -99,6 +108,11 @@ const Games = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-column-gap: 1rem;
   grid-row-gap: 5rem;
+`;
+
+const StyledSpinnerContainer = styled.div`
+  margin: 25px;
+  text-align: center;
 `;
 
 export default Home;
