@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/react-ignite/static/js/main.1f2073e9.chunk.js",
-    "main.js.map": "/react-ignite/static/js/main.1f2073e9.chunk.js.map",
+    "main.js": "/react-ignite/static/js/main.d91cf64b.chunk.js",
+    "main.js.map": "/react-ignite/static/js/main.d91cf64b.chunk.js.map",
     "runtime-main.js": "/react-ignite/static/js/runtime-main.4f1284e0.js",
     "runtime-main.js.map": "/react-ignite/static/js/runtime-main.4f1284e0.js.map",
-    "static/js/2.d3399430.chunk.js": "/react-ignite/static/js/2.d3399430.chunk.js",
-    "static/js/2.d3399430.chunk.js.map": "/react-ignite/static/js/2.d3399430.chunk.js.map",
+    "static/js/2.e8d5dbaa.chunk.js": "/react-ignite/static/js/2.e8d5dbaa.chunk.js",
+    "static/js/2.e8d5dbaa.chunk.js.map": "/react-ignite/static/js/2.e8d5dbaa.chunk.js.map",
     "index.html": "/react-ignite/index.html",
-    "static/js/2.d3399430.chunk.js.LICENSE.txt": "/react-ignite/static/js/2.d3399430.chunk.js.LICENSE.txt",
+    "static/js/2.e8d5dbaa.chunk.js.LICENSE.txt": "/react-ignite/static/js/2.e8d5dbaa.chunk.js.LICENSE.txt",
     "static/media/apple.5757c37e.svg": "/react-ignite/static/media/apple.5757c37e.svg",
     "static/media/gamepad.c9269ef5.svg": "/react-ignite/static/media/gamepad.c9269ef5.svg",
     "static/media/logo.9b6b8655.svg": "/react-ignite/static/media/logo.9b6b8655.svg",
@@ -18,7 +18,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4f1284e0.js",
-    "static/js/2.d3399430.chunk.js",
-    "static/js/main.1f2073e9.chunk.js"
+    "static/js/2.e8d5dbaa.chunk.js",
+    "static/js/main.d91cf64b.chunk.js"
   ]
 }
